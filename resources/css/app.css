@@ -1,3 +1,42 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@layer components {
+	.sidebar {
+		@apply  w-64 fixed -left-[100%] sm:left-0 top-0 bg-[#272e38] z-50 transition-[width];
+	}
+	.sidebar.active {
+		@apply left-0 w-64 z-[100] sm:w-[60px];
+	}
+	.sidebar.active #brand {
+		@apply w-64 sm:w-[60px];
+	}
+
+	.sidebar.active:hover {
+		@apply sm:left-0 sm:w-64 z-[100];
+	}
+	.sidebar.active:hover #brand {
+		@apply sm:w-64;
+	}
+
+	.sidebar.active:hover #brand a h2, .sidebar.active:hover #sidebar-menu ul a span{
+		@apply sm:block;
+	}
+
+	.sidebar.active #brand a h2, .sidebar.active #sidebar-menu ul a span{
+		@apply block sm:hidden;
+	}
+	.main-container {
+		@apply ml-0 sm:ml-64 transition-[margin-left];
+	}
+
+	.main-container.active {
+		@apply ml-0 sm:ml-[60px];
+	}
+
+	.main-container.active header {
+		@apply left-0 w-full sm:left-[60px] sm:w-[calc(100%-60px)];
+	}
+
+}
+
