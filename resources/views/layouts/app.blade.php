@@ -24,36 +24,116 @@
                     <button class="close-btn sm:hidden cursor-pointer mr-2"><x-icon.close class="text-white"></x-icon.close></button> 
                 </div>
             </div>
-            <nav id="sidebar-menu" class="mt-14 hover:overflow-y-scroll h-screen">
+            <nav id="sidebar-menu" class="mt-14 overflow-y-scroll h-screen pb-14">
                 <ul class="pt-2">
                     <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.home class="inline"></x-icon.home><span class="pl-2">Home</span></a></li>
                     <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.photograph class="inline"></x-icon.photograph><span class="pl-2">Services</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.network class="inline"></x-icon.network><span class="pl-2">Contact</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.chart-pie class="inline"></x-icon.chart-pie><span class="pl-2">Views</span></a></li>
+                    <li class="pl-4 mb-2">
+                        <a href="#" class="flex items-center pl-1 block text-gray-400 hover:text-white">
+                            <x-icon.close class="inline"></x-icon.close>
+                            <span class="pl-2">dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu pl-4 mb-2">
+                        <a href="#" class="has-sidebar-subitem flex items-center pl-1 mb-2 block text-gray-400 hover:text-white">
+                            <x-icon.close class="inline"></x-icon.close>
+                            <span class="pl-2 flex-1">account</span>
+                            <span class="icon mr-4 transition"><x-icon.chevron-right class="inline"></x-icon.chevron-right></span>
+                        </a>
+                        <ul class="sidebar-menu-dropdown-content p-0 h-[0] overflow-hidden transition-[height]">
+                            <li class="py-1">
+                                <a class="pl-10 text-gray-400" href="#">
+                                    edit profile
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400" href="#">
+                                    account settings
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400" href="#">
+                                    billing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                     <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
+                    <li class="sidebar-submenu pl-4 mb-2">
+                        <a href="#" class="has-sidebar-subitem flex items-center pl-1 mb-2 block text-gray-400 hover:text-white">
+                            <x-icon.close class="inline"></x-icon.close>
+                            <span class="pl-2 flex-1">account</span>
+                            <span class="icon mr-4 transition"><x-icon.chevron-right class="inline"></x-icon.chevron-right></span>
+                        </a>
+                        <ul class="sidebar-menu-dropdown-content p-0 h-[0] overflow-hidden transition-[height]">
+                            <li class="py-1">
+                                <a class="pl-10 text-gray-400" href="#">
+                                    edit profile
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400" href="#">
+                                    account settings
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400" href="#">
+                                    billing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
+                    <li class="sidebar-submenu pl-4 mb-2">
+                        <a href="#" class="has-sidebar-subitem flex items-center pl-1 mb-2 block text-gray-400 hover:text-white">
+                            <x-icon.close class="inline"></x-icon.close>
+                            <span class="pl-2 flex-1">account</span>
+                            <span class="icon mr-4 transition"><x-icon.chevron-right class="inline"></x-icon.chevron-right></span>
+                        </a>
+                        <ul class="sidebar-menu-dropdown-content p-0 h-[0] overflow-hidden transition-[height]">
+                            <li class="py-1">
+                                <a class="pl-10 text-gray-400 hover:text-white" href="#">
+                                    edit profile
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400 hover:text-white" href="#">
+                                    account settings
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400 hover:text-white" href="#">
+                                    billing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
-                    <li class="w-full mb-2 pl-4"><a class="flex items-center pl-1 block text-gray-400 hover:text-white" href="#"><x-icon.trending-up class="inline"></x-icon.trending-up><span class="pl-2">Reports</span></a></li>
+                    <li class="sidebar-submenu pl-4 mb-2">
+                        <a href="#" class="has-sidebar-subitem flex items-center pl-1 mb-2 block text-gray-400 hover:text-white">
+                            <x-icon.close class="inline"></x-icon.close>
+                            <span class="pl-2 flex-1">account</span>
+                            <span class="icon mr-4 transition"><x-icon.chevron-right class="inline"></x-icon.chevron-right></span>
+                        </a>
+                        <ul class="sidebar-menu-dropdown-content p-0 h-[0] overflow-hidden transition-[height]">
+                            <li class="py-1">
+                                <a class="pl-10 text-gray-400 hover:text-white" href="#">
+                                    edit profile
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400 hover:text-white" href="#">
+                                    account settings
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="pl-10 py-4 text-gray-400 hover:text-white" href="#">
+                                    billing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>

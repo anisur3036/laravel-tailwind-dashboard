@@ -12,6 +12,7 @@ function getWindowWidth () {
 }
 
 // Sidebar menu toggle
+const menuBtn = document.querySelector(".menu-btn");
 const sideMenu = document.querySelector("#sidebar");
 const closeBtn = document.querySelector(".close-btn");
 const mainContent = document.querySelector("#main-container");
@@ -26,4 +27,18 @@ closeBtn.addEventListener('click', function() {
 		sideMenu.classList.remove('active');
 		mainContent.classList.remove('active');
 	}
+})
+
+document.querySelectorAll('.sidebar-submenu').forEach(e => {
+	e.querySelector('.has-sidebar-subitem').onclick = (event) => {
+		event.preventDefault();
+		e.querySelector('.has-sidebar-subitem .icon').classList.toggle('active');
+		e.querySelector('.has-sidebar-subitem').classList.toggle('active');
+		let dropdownContent = e.querySelector('.sidebar-menu-dropdown-content');
+		let dropdownContentLists = dropdownContent.querySelectorAll('li');
+		let activeHight = dropdownContentLists[0].clientHeight * dropdownContentLists.length;
+		dropdownContent.classList.toggle('active');
+		dropdownContent.style.height = dropdownContent.classList.contains('active') ? activeHight + 'px': '0'
+	}
+
 })

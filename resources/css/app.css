@@ -26,6 +26,14 @@
 	.sidebar.active #brand a h2, .sidebar.active #sidebar-menu ul a span{
 		@apply block sm:hidden;
 	}
+
+	.sidebar.active #sidebar-menu .sidebar-submenu ul a {
+		@apply block sm:hidden;
+	}
+
+	.sidebar.active:hover #sidebar-menu .sidebar-submenu ul a {
+		@apply sm:inline;
+	}
 	.main-container {
 		@apply ml-0 sm:ml-64 transition-[margin-left];
 	}
@@ -38,5 +46,43 @@
 		@apply left-0 w-full sm:left-[60px] sm:w-[calc(100%-60px)];
 	}
 
+	.has-sidebar-subitem.active {
+		@apply text-white;
+	}
+
+	.icon.active {
+		@apply transform rotate-90;
+	}
+
+	#sidebar-menu::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #272e38;
+	}
+
+	#sidebar-menu::-webkit-scrollbar
+	{
+		width: 8px;
+		background-color: #424c5c;
+	}
+
+
+	#sidebar-menu::-webkit-scrollbar-thumb
+	{
+		background-color: #424c5c;
+		border: 2px solid #424c5c;
+	}
+
+	#sidebar-menu::scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #424c5c;
+	}
+
+	#sidebar-menu
+	{
+		scrollbar-width: thin;
+  	scrollbar-color: #424c5c transparent;
+	}
 }
 
